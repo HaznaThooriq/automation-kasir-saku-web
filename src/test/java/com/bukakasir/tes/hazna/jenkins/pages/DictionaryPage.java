@@ -12,7 +12,7 @@ import net.thucydides.core.pages.PageObject;
 
 import java.util.List;
 
-@DefaultUrl("http://en.wiktionary.org/wiki/Wiktionary")
+@DefaultUrl("https://accounts.google.com/ServiceLogin/identifier?hl=in&lp=1&flowName=GlifWebSignIn&flowEntry=AddSession")
 public class DictionaryPage extends PageObject {
 
     @FindBy(name="search")
@@ -22,8 +22,7 @@ public class DictionaryPage extends PageObject {
     private WebElementFacade lookupButton;
 
     public void enter_keywords(String keyword) {
-        //searchTerms.type(keyword);
-        WebElementFacade key = searchTerm.type(keyword);
+        WebElementFacade key = searchTerm.typeAndEnter(keyword);
     }
 
     public void lookup_terms() {

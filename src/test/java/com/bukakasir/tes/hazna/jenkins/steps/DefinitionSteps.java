@@ -27,4 +27,17 @@ public class DefinitionSteps {
         anna.should_see_definition(definition);
     }
 
+    @Given("^user go to gmail$")
+    public void userGoToGmail() {
+        anna.is_the_home_page();
+    }
+
+    @When("^user type in google$")
+    public void userTypeInGoogle() {
+
+    }
+
+    @When("^user type password$")
+    public void userTypePassword() {
+    }
 }
