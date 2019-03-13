@@ -34,10 +34,11 @@ public class DefinitionSteps {
 
     @When("^user type in google$")
     public void userTypeInGoogle() {
-
+        anna.type_username();
     }
 
     @When("^user type password$")
     public void userTypePassword() {
+        anna.type_password();
     }
 }

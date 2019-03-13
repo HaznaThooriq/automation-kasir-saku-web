@@ -13,5 +13,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: net.serenity-bdd:serenity-core:1.8.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: io.cucumber:cucumber-java:2.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.seleniumhq.selenium:selenium-api:3.7.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-context:5.0.0.RELEASE" level="project" />
   </component>
 </module>

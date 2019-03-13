@@ -33,6 +33,15 @@ public class EndUserSteps {
     }
 
     @Step
+    public void type_username(){
+        dictionaryPage.typeUsername();
+    }
+
+    @Step
+    public void type_password(){
+        dictionaryPage.typePassword();
+    }
+    @Step
     public void looks_for(String term) {
         enters(term);
         starts_search();
