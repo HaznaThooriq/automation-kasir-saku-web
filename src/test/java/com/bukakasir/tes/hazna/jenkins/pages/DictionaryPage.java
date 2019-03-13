@@ -16,13 +16,14 @@ import java.util.List;
 public class DictionaryPage extends PageObject {
 
     @FindBy(name="search")
-    private WebElementFacade searchTerms;
+    private WebElementFacade searchTerm;
 
     @FindBy(name="go")
     private WebElementFacade lookupButton;
 
     public void enter_keywords(String keyword) {
-        searchTerms.type(keyword);
+        //searchTerms.type(keyword);
+        WebElementFacade key = searchTerm.type(keyword);
     }
 
     public void lookup_terms() {
